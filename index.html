@@ -4,6 +4,130 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AEZY - Comfort T-Shirt</title>
+
+  <!-- Import Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #ffffff;
+      color: #333;
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      padding: 10px 0;
+      border-bottom: 2px solid #ddd;
+    }
+
+    header img { vertical-align: middle; }
+    header a { text-decoration: none; }
+    header a img {
+      margin-left: 15px;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+    header a img:hover { transform: scale(1.1); }
+    header td:first-child { padding-left: 20px; }
+
+    section h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      margin: 40px 0 15px;
+      color: #111;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.1rem;
+      text-align: center;
+      color: #444;
+      margin-bottom: 30px;
+      line-height: 1.6;
+      display: inline-block;
+      white-space: nowrap;
+      border-right: 2px solid #0078ff;
+      overflow: hidden;
+      padding-right: 5px;
+      animation: typing 6s steps(67, end) forwards, blink 0.7s infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 67ch; }
+    }
+
+    @keyframes blink { 50% { border-color: transparent; } }
+
+    .subtitle-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section table { margin: 0 auto; }
+
+    section table td {
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section table td:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    }
+
+    section table td strong {
+      font-size: 1.2rem;
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    section table td p,
+    section table td {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 1024px) {
+      section table td img { width: 160px; }
+    }
+
+    @media (max-width: 768px) {
+      section table tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      section table td {
+        flex: 1 1 40%;
+        margin: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      section table td { flex: 1 1 100%; }
+      section h1 { font-size: 2rem; }
+      .subtitle { font-size: 0.95rem; }
+    }
+  </style>
 </head>
 <body>
 
@@ -12,14 +136,14 @@
     <table width="100%">
       <tr>
         <td>
-          <img src="aezy.png" alt="Manage Account" width="100">
-          </td>
+          <img src="aezy.png" alt="Logo AEZY" width="100">
+        </td>
         <td align="right">
           <a href="#">
-            <img src="profile 3.png" alt="Manage Account" width="50">
+            <img src="profile 3.png" alt="Manage Account" width="60">
           </a>
           <a href="#">
-            <img src="cart2.jpg" alt="cart" width="50">
+            <img src="cart2.jpg" alt="Cart" width="55">
           </a>
         </td>
       </tr>
@@ -28,32 +152,70 @@
 
   <!-- Title -->
   <section>
-    <h1 align="center">Comfort AEZY T-Shirt</h1>
+    <h1>Comfort AEZY T-Shirt</h1>
+    <div class="subtitle-container">
+      <p class="subtitle">Minimal style, maximum comfort. Designed to feel as good as it looks.</p>
+    </div>
   </section>
 
   <!-- Product Grid -->
   <section>
     <table width="100%" border="0">
+      <!-- Baris 1 -->
       <tr>
         <td align="center">
           <img src="baju3.webp" alt="White T-Shirt" width="200"><br>
-          <strong>White</strong><br>
-          $25.00
+          <strong>Regular White</strong><br>$25.00
         </td>
         <td align="center">
-          <img src="baju1.webp" alt="Black T-Shirt" width="200"><br>
-          <strong>Black</strong><br>
-          $25.00
+          <img src="baju1.webp" alt="Brown T-Shirt" width="200"><br>
+          <strong>Regular Brown</strong><br>$25.00
         </td>
         <td align="center">
-          <img src="baju2.webp" alt="Blue T-Shirt" width="200"><br>
-          <strong>Blue</strong><br>
-          $25.00
+          <img src="baju2.webp" alt="Black T-Shirt" width="200"><br>
+          <strong>Regular Black</strong><br>$25.00
         </td>
         <td align="center">
-          <img src="baju3.webp" alt="Red T-Shirt" width="200"><br>
-          <strong>Red</strong><br>
-          $25.00
+          <img src="body fit hitam.webp" alt="Red T-Shirt" width="200"><br>
+          <strong>Body Fit Black</strong><br>$25.00
+        </td>
+      </tr>
+      <!-- Baris 2 -->
+      <tr>
+        <td align="center">
+          <img src="oversize niga.webp" alt="Grey T-Shirt" width="200"><br>
+          <strong>Oversized Black</strong><br>$25.00
+        </td>
+        <td align="center">
+          <img src="oversize sand.webp" alt="Navy T-Shirt" width="200"><br>
+          <strong>Oversized Sand</strong><br>$25.00
+        </td>
+        <td align="center">
+          <img src="oversized grey.webp" alt="Green T-Shirt" width="200"><br>
+          <strong>Oversized Grey</strong><br>$25.00
+        </td>
+        <td align="center">
+          <img src="Heavy weight niga.webp" alt="Beige T-Shirt" width="200"><br>
+          <strong>Heavy Weight Black</strong><br>$25.00
+        </td>
+      </tr>
+      <!-- Baris 3 -->
+      <tr>
+        <td align="center">
+          <img src="baju2.webp" alt="Olive T-Shirt" width="200"><br>
+          <strong>Olive</strong><br>$25.00
+        </td>
+        <td align="center">
+          <img src="baju3.webp" alt="Maroon T-Shirt" width="200"><br>
+          <strong>Maroon</strong><br>$25.00
+        </td>
+        <td align="center">
+          <img src="baju1.webp" alt="Blue T-Shirt" width="200"><br>
+          <strong>Blue</strong><br>$25.00
+        </td>
+        <td align="center">
+          <img src="baju2.webp" alt="Yellow T-Shirt" width="200"><br>
+          <strong>Yellow</strong><br>$25.00
         </td>
       </tr>
     </table>
