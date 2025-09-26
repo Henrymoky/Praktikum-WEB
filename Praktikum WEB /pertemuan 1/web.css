@@ -1,0 +1,197 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #ffffff;
+    color: #333;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* ===== Navbar ===== */
+  header {
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px; /* biar gak mentok kanan */
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icons a {
+    margin-left: 20px; /* kasih jarak antar icon */
+    color: #5a2d82;
+    font-size: 22px;
+    text-decoration: none;
+  }
+  
+  .icons a:hover {
+    color: #3b1f57;
+  }
+  
+  #dark-mode-toggle {
+    margin-left: 20px;
+    padding: 6px 10px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  #dark-mode-toggle:hover {
+    background: #ddd;
+  }
+  
+  /* ===== Title ===== */
+  section h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin: 40px 0 15px;
+    color: #111;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  
+  .subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #444;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    display: inline-block;
+    white-space: nowrap;
+    border-right: 2px solid #0078ff;
+    overflow: hidden;
+    padding-right: 5px;
+    animation: typing 6s steps(67, end) forwards, blink 0.7s infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 67ch; }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+  
+  .subtitle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* ===== Product Grid ===== */
+  section table {
+    margin: 0 auto;
+  }
+  
+  section table td {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  section table td:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  }
+  
+  section table td strong {
+    font-size: 1.2rem;
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  section table td img {
+    cursor: pointer; /* biar keliatan bisa diklik */
+  }
+  
+  section table td p,
+  section table td {
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  /* ===== Footer ===== */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: #fff;
+    margin-top: 40px;
+  }
+  
+  footer p#weather {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  /* ===== Dark Mode ===== */
+  .dark-mode {
+    background: #121212;
+    color: #f0f0f0;
+  }
+  
+  .dark-mode header {
+    background: #1e1e1e;
+    border-bottom: 2px solid #444;
+  }
+  
+  .dark-mode footer {
+    background: #000;
+    color: #ddd;
+  }
+  
+  .dark-mode #dark-mode-toggle {
+    background: #333;
+    color: #fff;
+  }
+  
+  .dark-mode section table td {
+    background: #1e1e1e;
+    color: #eee;
+    box-shadow: 0 4px 8px rgba(255,255,255,0.05);
+  }
+  
+  /* ===== Responsive ===== */
+  @media (max-width: 1024px) {
+    section table td img { width: 160px; }
+  }
+  
+  @media (max-width: 768px) {
+    section table tr {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    section table td {
+      flex: 1 1 40%;
+      margin: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    section table td { flex: 1 1 100%; }
+    section h1 { font-size: 2rem; }
+    .subtitle { font-size: 0.95rem; }
+  }
+  
